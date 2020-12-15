@@ -17,7 +17,7 @@
             background-color: #3AC5C9;
             border: none;
             color: white;
-            padding: 13px 32px;
+            padding: 11px 25px;
             border-radius: 4px;
             text-align: center;
             text-decoration: none;
@@ -79,7 +79,7 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="card-title mb-4">
-                            <div class="d-flex justify-content-start">
+                            <div class="d-flex bd-highlight">
                                 <div class="image-container">
                                     <img src="https://ephoto360.com/uploads/effect-data/ephoto360.com/1362b22eb/t5e787cba70ec8.jpg" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
                                     <div class="middle">
@@ -87,11 +87,11 @@
                                         <input type="file" style="display: none;" id="profilePicture" name="file" />
                                     </div>
                                 </div>
-                                <div class="userData ml-3">
+                                <div class="p-2 flex-grow-1 bd-highlight">
                                     <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold; margin: 20px"><a href="javascript:void(0);">Username</a></h2>
                                 </div>
-                                <div class="ml-auto">
-                                    <input type="button" class="btn btn-primary d-none" id="btnDiscard" value="Discard Changes" />
+                                <div class="p-2 bd-highlight">
+                                    <input type="button" class="btn btn-danger d-none" id="btnDiscard" value="Discard Changes" />
                                 </div>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
                                         </li>
                                     </ul>
                                     <div class="tab-content ml-1" id="myTabContent">
-                                        <div class="tab-panel fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
+                                        <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
                                             <form class="mb-3" action="##" method="post">
                                                 <div class="mb-3 col-9">
                                                     <label for="fullname"><h6>Fullname</h6></label>
@@ -128,10 +128,9 @@
                                             </form>
                                         </div>
 
-                                        <div class="tab-panel fade" id="changePassword" role="tabpanel" aria-labelledby="changePassword-tab">
+                                        <div class="tab-pane fade" id="changePassword" role="tabpanel" aria-labelledby="changePassword-tab">
                                             <form class="mb-3" action="##" method="post">
                                                 <div class="mb-3 col-9">
-                                                    <br>
                                                     <label for="oldPassword"><h6>Old Password</h6></label>
                                                     <input type="password" class="form-control" name="oldPassword" id="oldPassword" placeholder="enter password">
                                                 </div>
