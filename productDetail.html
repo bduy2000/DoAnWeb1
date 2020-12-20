@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="styleproductdetail.css" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.5.1.js"></script>
+    <style>
+        * {
+            font-family: "Open Sans", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <script language="javascript" src="scriptproductdetail.js"></script>
+    <div class="container">
+        <div class="card">
+            <div class="row">
+                <div class="container-fliud">
+                    <div class="wrapper row">
+                        <div class="preview col-md-6">
+
+                            <div class="preview-pic tab-content">
+                                <div class="tab-pane active" id="pic-1"><img src="https://i.pinimg.com/originals/85/21/82/852182a63a31ded87105a1ba6f9fdefd.jpg" /></div>
+                                <div class="tab-pane" id="pic-2"><img src="https://i.pinimg.com/originals/d8/f6/b1/d8f6b1a23df99566c9a10516f431359f.jpg" /></div>
+                                <div class="tab-pane" id="pic-3"><img src="https://i.pinimg.com/originals/be/b9/94/beb9942f5accf4dcc8dfcef5aba98f50.jpg" /></div>
+                                <div class="tab-pane" id="pic-4"><img src="https://i.pinimg.com/originals/9c/cd/88/9ccd888c39e6fbdd39473b8e82821033.jpg" /></div>
+                                <div class="tab-pane" id="pic-5"><img src="https://i.pinimg.com/originals/8a/e7/c0/8ae7c066b0bfdd25bacc622d81510ca2.jpg" /></div>
+                            </div>
+                            <ul class="preview-thumbnail nav nav-tabs">
+                                <li class="active">
+                                    <a data-target="#pic-1" data-toggle="tab"><img src="https://i.pinimg.com/originals/85/21/82/852182a63a31ded87105a1ba6f9fdefd.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a data-target="#pic-2" data-toggle="tab"><img src="https://i.pinimg.com/originals/d8/f6/b1/d8f6b1a23df99566c9a10516f431359f.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a data-target="#pic-3" data-toggle="tab"><img src="https://i.pinimg.com/originals/be/b9/94/beb9942f5accf4dcc8dfcef5aba98f50.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a data-target="#pic-4" data-toggle="tab"><img src="https://i.pinimg.com/originals/9c/cd/88/9ccd888c39e6fbdd39473b8e82821033.jpg" /></a>
+                                </li>
+                                <li>
+                                    <a data-target="#pic-5" data-toggle="tab"><img src="https://i.pinimg.com/originals/8a/e7/c0/8ae7c066b0bfdd25bacc622d81510ca2.jpg" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="details col-md-6">
+                            <h3 class="product-title">Product</h3>
+                            <p class="product-description">Description of product.</p>
+                            <h4 class="price">current price: <span>$180</span></h4>
+                            <div class="section" style="padding-bottom:20px;">
+                                <h6 class="title-attr">Amount: </h6>
+                                <div>
+                                    <div class="btn-minus"><span class="fa fa-plus"></span></div>
+                                    <input value="1" />
+                                    <div class="btn-plus"><span class="fa fa-minus"></span></div>
+                                </div>
+                            </div>
+                            <div class="action">
+                                <button class="add-to-cart btn btn-default" type="button">Add to cart</button>
+                                <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <ul class="menu-items"> Detail </ul>
+                <div style="width:100%; border-top:1px solid silver">
+                    <p style="padding:15px;">
+                        <small>
+                                Detail of product...
+                        </small>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="menu-items"> Comment</ul>
+                <div style="width:100%; border-top:1px solid silver">
+                    <div class="widget-area">
+                        <div class="status-upload">
+                            <form>
+                                <textarea placeholder="What's your comment?"></textarea>
+                                <ul>
+                                    <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="fa fa-camera"></i></a></li>
+                                </ul>
+                                <button type="submit" class="btn btn-success" style="background-color: #3AC5C9"><i class="fa fa-share"></i> Share</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="thumbnail">
+                            <img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
+                            </div>
+                            <div class="panel-body">
+                                My comment.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
