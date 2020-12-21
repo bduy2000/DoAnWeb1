@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style >
+
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+h2 {
+	color: #000;
+	font-size: 26px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px 0 80px;
+}
+h2 b {
+	color:  #FF5E18;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 4px;
+	background: rgba(0, 0, 0, 0.2);
+	left: 0;
+	right: 0;
+	bottom: -20px;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .item {
+	min-height: 330px;
+    text-align: center;
+	overflow: hidden;
+}
+.carousel .item .img-box {
+	height: 160px;
+	width: 100%;
+	position: relative;
+}
+.carousel .item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.carousel .item h4 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+.carousel .item .btn {
+	color: #333;
+    border-radius: 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-top: 5px;
+    line-height: 16px;
+}
+.carousel .item .btn:hover, .carousel .item .btn:focus {
+	color: #fff;
+	background: #000;
+	border-color: #000;
+	box-shadow: none;
+}
+.carousel .item .btn i {
+	font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+	text-align: center;
+}
+.carousel .thumb-content {
+	padding: 15px;
+}
+.carousel .carousel-control {
+	height: 100px;
+    width: 40px;
+    background: none;
+    margin: auto 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+.carousel .carousel-control i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    font-weight: bold;
+}
+.carousel .item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+
+.carousel .item-price span {
+	color: #8fc217;
+	font-size: 110%;
+}
+.carousel .carousel-control.left i {
+	margin-left: -3px;
+}
+.carousel .carousel-control.left i {
+	margin-right: -3px;
+}
+.carousel .carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border-radius: 50%;
+	border-color: transparent;
+}
+.carousel-indicators li {	
+	background: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {	
+	background: rgba(0, 0, 0, 0.6);
+}
+.star-rating li {
+	padding: 0;
+}
+.star-rating i {
+	font-size: 14px;
+	color: #ffc000;
+}
+
+.pb-60 {
+	padding-bottom: 60px;
+}
+.pt-60 {
+	padding-top: 60px;
+}
+.mb-60 {
+	margin-bottom: 60px;
+}
+p {
+	font-weight: 300;
+	font-size: 14px;
+}
+.section-title p {
+	font-size: 24px;
+	font-family: Oleo Script;
+	margin-bottom: 0px;
+}
+.section-title h4 {
+	font-size: 40px;
+	text-transform: capitalize;
+	color: #FF5E18;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 25px;
+}
+.section-title h4::before {
+	width: 80px;
+	height: 1.5px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -40px;
+}
+.section-title h4::before, .section-title h4::after {
+	position: absolute;
+	content: "";
+	background-color: #FF5E18;
+}
+.section-title h4::after {
+	width: 40px;
+	height: 1.5px;
+	bottom: -5px;
+	left: 50%;
+	margin-left: -20px;
+}
+.single_service.service_right {
+	padding-right: 70px;
+	padding-left: 0;
+	text-align: right;
+}
+
+.single_service:nth-child(1), .single_service:nth-child(2) {
+	border-bottom: 1px dashed #333;
+	padding-bottom: 15px;
+}
+
+.single_service {
+	position: relative;
+	padding-left: 70px;
+	margin-bottom: 35px;
+    font-size: medium;
+}
+
+
+  		.img_section figure img {
+  			transform: scale(1);
+  			transition: .3s ease-in-out;
+  			height: 300;
+  			width: 200;  			
+  		}
+		.img_section figure:hover img {
+			transform: scale(1.3);
+		}
+		h2.zoom {
+    padding-bottom: 33px;
+    padding-left: 25px;
+}
+.img_section2 figure img {
+	width: 300px;
+	height: auto;
+	transition: .3s ease-in-out;
+
+}
+.img_section2:hover figure img{
+	width: 350px;
+}
+.img_section3 figure img{
+	margin-left: 30px;
+	width: 300px;
+	transition: .3s ease-in-out;
+}
+.img_section3:hover figure img{
+	margin-left: 0;
+	
+}
+.img_section4 figure img{
+	transform:  scale(1);
+	transition: .3s ease-in-out;
+}
+.img_section4:hover figure img{
+	transform: rotate(10deg) scale(1);
+	
+}
+
+.context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+    content: "\f14f";
+    font: 800 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+
+	
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Trending <b>Books</b></h2>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="item carousel-item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://salt.tikicdn.com/cache/280x280/ts/product/df/7d/da/d340edda2b0eacb7ddc47537cddb5e08.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Đắc Nhân Tâm</h4>
+									<p class="item-price">-40%<span> 46.500 đ</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://salt.tikicdn.com/cache/280x280/ts/product/0a/fb/51/202015881b04b7c8a4b47d15cf9c049f.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Hai Số Phận</h4>
+									<p class="item-price">-46% <span>101.000 đ</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>		
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://salt.tikicdn.com/cache/280x280/ts/product/83/30/87/737846efdb9f28f0f51352cacf9225c5.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Nhà Giả Kim</h4>
+									<p class="item-price">-40% <span>41.000 đ</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>								
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://salt.tikicdn.com/cache/280x280/media/catalog/product/k/h/khi-hoi-tho-hoa-thinh-khong.u5464.d20170726.t170655.288851.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Khi Hơi Thở Hóa Thinh Không</h4>
+									<p class="item-price">-45% <span>65.400 đ</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://salt.tikicdn.com/cache/280x280/ts/product/61/87/8a/082a07cec3232115e2b22636fd71593c.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Tony Buổi Sáng - Trên Đường Băng</h4>
+									<p class="item-price">-40% <span>48.000 đ</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://vn-live-01.slatic.net/p/09f99f9527393b0749f572f265a9942b.jpg_200x200q90.jpg_.webp" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Sức mạnh Tiềm thức</h4>
+									<p class="item-price">-31% <span>71.000 đ</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://salt.tikicdn.com/cache/280x280/ts/product/22/cb/a9/524a27dcd45e8a13ae6eecb3dfacba7c.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Rèn Luyện Tư Duy Phản Biện</h4>
+									<p class="item-price">-49% <span>49.400 đ</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://salt.tikicdn.com/cache/280x280/media/catalog/product/k/h/khong-gia-dinh---pc-bia-mem.u5552.d20171101.t141222.773750.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Không Gia Đình</h4>
+									<p class="item-price">-48% <span>71.000 đ</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="item carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://salt.tikicdn.com/cache/280x280/ts/product/cd/2a/5b/926ca6c7b295c6e7cea39390efe08968.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Sự Im Lặng Của Bầy Cừu</h4>
+									<p class="item-price">-50% <span>69.000 đ</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://salt.tikicdn.com/cache/280x280/ts/product/6b/3f/02/b07860307ff6932d870b94b1097d7d99.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Vũ Trụ</h4>
+									<p class="item-price">-47% <span>89.400 đ</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://salt.tikicdn.com/cache/280x280/ts/product/25/40/61/dc00eccce4b4e0ec7098ff41df67c686.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Your Name</h4>
+									<p class="item-price">-40% <span>45.000 đ</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>	
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="https://salt.tikicdn.com/cache/200x200/ts/product/44/69/29/55587756d1b1933616549f7d125ed84f.jpg" class="img-responsive img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Just Because</h4>
+									<p class="item-price">-30% <span>65.000 đ</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">Add to Cart</a>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+        </div>
+        
+        </div>
+        
+    </div>
+<br>
+<br>
+<br>
+<br>
+    <section class="services pt-60 pb-60 " id="services">
+    <div class="row">
+        <div class="col-xl-12">
+           <div class="section-title text-center mb-60">
+              <p>The best for friends & family</p>
+              <h4>My Store</h4>
+           </div>
+        </div>
+     </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-12">
+           <div class="single_service service_right">
+              <i class="fa fa-truck fa-2x"></i>
+              <h4><strong>Free Delivery</strong></h4>
+              <p>Free shipping on all orders</p>
+           </div>
+           <div class="single_service service_right">
+            <i class="fa fa-refresh fa-2x"></i>
+              <h4><strong>Return Policy</strong></h4>
+              <p>Easy return when the product has a problem</p>
+           </div>
+           <div class="single_service service_right">
+            <i class="fa fa-headphones fa-2x"></i>
+            <h4><strong>24/7 Support</strong></h4>
+              <p>Always ready to answer customers' questions</p>
+           </div>
+        </div>
+        <div class="col-md-4 col-sm-7">
+           <div class="single_mid">
+              <img src="https://i.pinimg.com/564x/10/00/a1/1000a11f8d75a52b696766c1e8afa4df.jpg" alt="" width="370">
+           </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+           <div class="single_service">
+            <i class="fa fa-database fa-2x"></i>             
+             <h4><strong>Secure Payment</strong></h4>
+              <p>Make sure customers pay safely</p>
+           </div>
+           <div class="single_service">
+            <i class="fa fa-globe fa-2x"></i>
+             <h4><strong>Popular Products</strong></h4>
+              <p>Includes many types of products at home and abroad</p>
+           </div>
+           <div class="single_service">
+            <i class="fa fa-coffee fa-2x"></i>
+              <h4><strong>Comfortable Space</strong></h4>
+              <p>Good space for you</p>
+           </div>
+        </div>
+     </div>
+    </section>
+   
+    <br>
+<br>
+<br>
+<br>
+<br>
+    <div class="row">
+        <div class="col-xl-12">
+           <div class="section-title text-center mb-60">
+              <h4>There are many types of books</h4>
+              
+           </div>
+        </div>
+     </div>
+    <div class="row">
+        <h2 class="zoom">Legal politics</h2>
+        
+        <div class="col-sm-6">
+            <div class="img_section">
+                <figure><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTu27xqKfGSBDwHV-ZMJT0xuc5r_eDRTgzzBjJ7OZCjEdz35SOiSvLUXkNkHi3n7xQKAaqEOZT0uXN2r9-c53sIs6E8_2Uyolwz44jo5w&usqp=CAc" width="150"></figure>
+            </div>
+        </div>
+        <h2 class="zoom">Science and Technology - Economy</h2>
+        <div class="col-sm-6">
+            <div class="img_section">
+                <figure><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQN17mVDZwkHyiaVvQAbKoaRjNkWttlfHt2nDd8cwK_Y-tbE1WwDRH4DjKe8m6e&usqp=CAc" width="250"></figure>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <h2 class="zoom_in">Art and Literature</h2>
+            
+            <div class="col-sm-6">
+                <div class="img_section2">
+                    <figure><img src="https://shoptretho.com.vn/upload/image/product/20140411/truyen-kieu.jpg" ></figure>
+                </div>
+            </div>
+        <h2 class="zoom_in">Social Culture - History</h2>
+            <div class="col-sm-6">
+                <div class="img_section2">
+                    <figure><img src="https://img1.baza.vn/upload/files/products-sUPlxAn9/qNLgPf8V.JPG?v=635646194667281576"></figure>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="rotate">Psychology, spirituality, religion</h2>
+                <div class="col-sm-6">
+                    <div class="img_section4">
+                        <figure><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSAcEbztwAXganswUAB0qSqBOrWMmlGt6IpIxb0MvZQXBuRpkik-OibG6nUpL_bB84XeXqIh93QySvNxyTM7-b7BCHJuS3kwZKzhtocUmelsvWJzBMlV9Q&usqp=CAc" width="200"></figure>
+                    </div>
+                </div>
+            <h2 class="rotate">Children's books</h2>
+                <div class="col-sm-6">
+                    <div class="img_section4">
+                        <figure><img src="https://toquoc.mediacdn.vn/Upload/Article/doanvankhanh/2013/5/31/rez_263_co%20be%20ban%20diem%20copy.jpg" width="300"></figure>
+                    </div>
+                </div>
+                
+            </div>
+        <div class="row">
+            <h2 class="slide">Curriculum</h2>
+            <div class="col-sm-6">
+                <div class="img_section3">
+                    <figure><img src="https://cf.shopee.vn/file/0193c645973364a8ef9f073efb7d969c"></figure>
+                </div>
+            </div>  
+        </div>
+        <div class="row">
+        <h2 class="slide">Novel</h2>
+            <div class="col-sm-6">
+                <div class="img_section3">
+                    <figure><img src="https://sachxua.vn/wp-content/uploads/2020/01/mac-biet-sach-nta.jpg"></figure>
+                </div>
+            </div>
+        </div>
+        
+ 
+            
+</div>
+<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+    <div class="container">
+      <div class="row row-30">
+        <div class="col-md-4 col-xl-5">
+          <div class="pr-xl-4"><a class="brand" ></a>
+            <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+            <!-- Rights-->
+            <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Contacts</h5>
+          <dl class="contact-list">
+            <dt>Address:</dt>
+            <dd>227 Nguyễn Văn Cừ phường 4, Quận 5, Thành phố Hồ Chí Minh</dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>email:</dt>
+            <dd><a href="mailto:#">dkstudioin@gmail.com</a></dd>
+          </dl>
+          <dl class="contact-list">
+            <dt>phones:</dt>
+            <dd><a href="tel:#">https://karosearch.com</a> <span>or</span> <a href="tel:#">https://karosearch.com</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="col-md-4 col-xl-3">
+          <h5>Links</h5>
+          <ul class="nav-list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters social-container">
+      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+      <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+    </div>
+  </footer>
+</body>
+</html>                  
