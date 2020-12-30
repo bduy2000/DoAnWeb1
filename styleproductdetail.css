@@ -152,6 +152,7 @@ div.section>div>input {
 }
 
 .product-title,
+.rating,
 .product-description,
 .price {
     margin-bottom: 15px;
